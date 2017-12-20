@@ -18,6 +18,10 @@
 		AEAA2E651FE755B200E40C4D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAA2E641FE755B200E40C4D /* LogInViewController.swift */; };
 		AEAA2E671FE755CB00E40C4D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAA2E661FE755CB00E40C4D /* RegisterViewController.swift */; };
 		AEAA2E6D1FE758B300E40C4D /* MainParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAA2E6C1FE758B300E40C4D /* MainParentViewController.swift */; };
+		AEAA2E6F1FEAB21C00E40C4D /* ChildMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAA2E6E1FEAB21C00E40C4D /* ChildMainViewController.swift */; };
+		AEAA2E711FEAB7ED00E40C4D /* LocationMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAA2E701FEAB7ED00E40C4D /* LocationMonitorViewController.swift */; };
+		AEAA2E731FEAC9E800E40C4D /* ChildMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAA2E721FEAC9E800E40C4D /* ChildMapViewController.swift */; };
+		AEAA2E751FEAE08100E40C4D /* EnterParentIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAA2E741FEAE08100E40C4D /* EnterParentIDViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		AEAA2E641FE755B200E40C4D /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		AEAA2E661FE755CB00E40C4D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AEAA2E6C1FE758B300E40C4D /* MainParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainParentViewController.swift; sourceTree = "<group>"; };
+		AEAA2E6E1FEAB21C00E40C4D /* ChildMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildMainViewController.swift; sourceTree = "<group>"; };
+		AEAA2E701FEAB7ED00E40C4D /* LocationMonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMonitorViewController.swift; sourceTree = "<group>"; };
+		AEAA2E721FEAC9E800E40C4D /* ChildMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildMapViewController.swift; sourceTree = "<group>"; };
+		AEAA2E741FEAE08100E40C4D /* EnterParentIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterParentIDViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +126,15 @@
 		AEAA2E6B1FE7577C00E40C4D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AEAA2E6E1FEAB21C00E40C4D /* ChildMainViewController.swift */,
+				AEAA2E701FEAB7ED00E40C4D /* LocationMonitorViewController.swift */,
 				AEAA2E661FE755CB00E40C4D /* RegisterViewController.swift */,
 				AEAA2E621FE7559D00E40C4D /* WelcomeViewController.swift */,
 				AEAA2E641FE755B200E40C4D /* LogInViewController.swift */,
 				AEAA2E601FE7506900E40C4D /* CreateUserViewController.swift */,
 				AEAA2E6C1FE758B300E40C4D /* MainParentViewController.swift */,
+				AEAA2E721FEAC9E800E40C4D /* ChildMapViewController.swift */,
+				AEAA2E741FEAE08100E40C4D /* EnterParentIDViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -266,10 +278,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEAA2E651FE755B200E40C4D /* LogInViewController.swift in Sources */,
+				AEAA2E6F1FEAB21C00E40C4D /* ChildMainViewController.swift in Sources */,
 				AEAA2E671FE755CB00E40C4D /* RegisterViewController.swift in Sources */,
+				AEAA2E731FEAC9E800E40C4D /* ChildMapViewController.swift in Sources */,
 				AEAA2E631FE7559D00E40C4D /* WelcomeViewController.swift in Sources */,
 				AEAA2E6D1FE758B300E40C4D /* MainParentViewController.swift in Sources */,
+				AEAA2E751FEAE08100E40C4D /* EnterParentIDViewController.swift in Sources */,
 				AEAA2E4D1FE740A700E40C4D /* AppDelegate.swift in Sources */,
+				AEAA2E711FEAB7ED00E40C4D /* LocationMonitorViewController.swift in Sources */,
 				AEAA2E611FE7506900E40C4D /* CreateUserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,9 +11,16 @@ import FirebaseAuth
 
 class MainParentViewController: UIViewController {
 
-    override func viewDidLoad() {
+ 
+ 
+  @IBAction func statusButtonTapped(_ sender: Any) {
+    
+  }
+  
+  override func viewDidLoad() {
         super.viewDidLoad()
-
+    
+    
         // Do any additional setup after loading the view.
     }
 

@@ -13,7 +13,7 @@
         <!--Child Fencing-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DigitalCrib" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,7 +48,7 @@
                                                 <rect key="frame" x="160" y="0.0" width="160" height="83"/>
                                                 <state key="normal" title="Child"/>
                                                 <connections>
-                                                    <segue destination="LEo-ye-s9z" kind="show" identifier="goToChildView" id="qQ5-Lq-Oka"/>
+                                                    <segue destination="LEo-ye-s9z" kind="show" id="HDu-yW-vCm"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -106,7 +106,8 @@
                                                         <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Status"/>
                                                         <connections>
-                                                            <segue destination="V3U-ns-a6z" kind="show" id="6F2-8S-Qf1"/>
+                                                            <action selector="statusButtonTapped:" destination="wD9-Hx-4wd" eventType="touchUpInside" id="8Wx-S0-cDN"/>
+                                                            <segue destination="405-rp-35O" kind="show" id="1o0-zt-hji"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -193,55 +194,6 @@
             <point key="canvasLocation" x="1920" y="1056"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="o0o-Mg-xvI">
-            <objects>
-                <viewController id="V3U-ns-a6z" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0I0-K0-c1t">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parent User ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ma-xb-4dM">
-                                <rect key="frame" x="100" y="101" width="115" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="02e-Br-zdQ"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="115" id="45q-OK-rQ0"/>
-                                    <constraint firstAttribute="width" constant="115" id="eP5-Ei-VOY"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="iBM-pS-Ctn"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PG2-Im-lVN">
-                                <rect key="frame" x="100" y="161" width="115" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="G3e-Fl-Zie"/>
-                                    <constraint firstAttribute="width" constant="115" id="NRw-t4-YMT"/>
-                                </constraints>
-                                <state key="normal" title="Check Children"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="znJ-gj-nqv" firstAttribute="trailing" secondItem="PG2-Im-lVN" secondAttribute="trailing" constant="100" id="Tgn-l2-Tob"/>
-                            <constraint firstItem="1ma-xb-4dM" firstAttribute="top" secondItem="znJ-gj-nqv" secondAttribute="top" constant="37" id="V0a-Uc-gIw"/>
-                            <constraint firstItem="PG2-Im-lVN" firstAttribute="leading" secondItem="znJ-gj-nqv" secondAttribute="leading" constant="100" id="f2y-y9-vlN"/>
-                            <constraint firstItem="znJ-gj-nqv" firstAttribute="trailing" secondItem="1ma-xb-4dM" secondAttribute="trailing" constant="100" id="keo-uJ-86h"/>
-                            <constraint firstItem="1ma-xb-4dM" firstAttribute="leading" secondItem="znJ-gj-nqv" secondAttribute="leading" constant="100" id="pTs-1h-G7J"/>
-                            <constraint firstItem="PG2-Im-lVN" firstAttribute="top" secondItem="1ma-xb-4dM" secondAttribute="bottom" constant="30" id="tT3-TN-0G6"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="znJ-gj-nqv"/>
-                    </view>
-                    <connections>
-                        <segue destination="fo1-xl-IdZ" kind="show" identifier="goToDanger" id="uJQ-Lb-u2E"/>
-                        <segue destination="edG-fp-DSv" kind="show" identifier="goToSafe" id="IyO-vs-ERM"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2wy-Sg-72h" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2899" y="714"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="upz-h8-gu4">
             <objects>
                 <viewController id="edG-fp-DSv" sceneMemberID="viewController">
@@ -250,7 +202,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="safeChild" translatesAutoresizingMaskIntoConstraints="NO" id="l7n-VB-hgd">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -265,34 +217,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qV-0Z-iBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3827" y="293"/>
+            <point key="canvasLocation" x="3829" y="172"/>
         </scene>
-        <!--View Controller-->
+        <!--Child Map View Controller-->
         <scene sceneID="5LE-Or-upp">
             <objects>
-                <viewController id="fo1-xl-IdZ" sceneMemberID="viewController">
+                <viewController id="fo1-xl-IdZ" customClass="ChildMapViewController" customModule="DigitalCrib" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pfO-fO-Jvf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Child is out of the Fence !!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bv-TA-7qW">
-                                <rect key="frame" x="58" y="273.5" width="204.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KGu-f1-sAb">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </mapView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.054445878820000002" blue="0.073171331980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6bv-TA-7qW" firstAttribute="centerX" secondItem="pfO-fO-Jvf" secondAttribute="centerX" id="Bi8-8L-jSr"/>
-                            <constraint firstItem="6bv-TA-7qW" firstAttribute="centerY" secondItem="pfO-fO-Jvf" secondAttribute="centerY" id="dWL-R2-2Jp"/>
+                            <constraint firstItem="KGu-f1-sAb" firstAttribute="top" secondItem="w8u-gr-NP4" secondAttribute="top" id="99r-GE-YoT"/>
+                            <constraint firstItem="w8u-gr-NP4" firstAttribute="trailing" secondItem="KGu-f1-sAb" secondAttribute="trailing" id="9DM-3h-hoQ"/>
+                            <constraint firstItem="KGu-f1-sAb" firstAttribute="top" secondItem="w8u-gr-NP4" secondAttribute="top" id="BOc-OH-saF"/>
+                            <constraint firstItem="w8u-gr-NP4" firstAttribute="bottom" secondItem="KGu-f1-sAb" secondAttribute="bottom" id="K85-Gs-bOS"/>
+                            <constraint firstItem="w8u-gr-NP4" firstAttribute="bottom" secondItem="KGu-f1-sAb" secondAttribute="bottom" id="LwY-2s-C6G"/>
+                            <constraint firstItem="KGu-f1-sAb" firstAttribute="leading" secondItem="w8u-gr-NP4" secondAttribute="leading" id="glG-92-TgG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w8u-gr-NP4"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="KGu-f1-sAb" id="sRd-Kg-MDE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OyD-xl-hcy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3827" y="1055"/>
+            <point key="canvasLocation" x="3829" y="893"/>
         </scene>
         <!--Create User View Controller-->
         <scene sceneID="7u3-qu-k0l">
@@ -327,12 +282,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LIS-qn-YA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2899" y="1609"/>
+            <point key="canvasLocation" x="2927" y="1480"/>
         </scene>
-        <!--View Controller-->
+        <!--Child Main View Controller-->
         <scene sceneID="RaF-xg-Bvv">
             <objects>
-                <viewController id="LEo-ye-s9z" sceneMemberID="viewController">
+                <viewController id="LEo-ye-s9z" customClass="ChildMainViewController" customModule="DigitalCrib" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hWw-mQ-ygE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -365,7 +320,7 @@
                                 </constraints>
                                 <state key="normal" title="Report My Location"/>
                                 <connections>
-                                    <segue destination="VZE-u2-u4Z" kind="show" id="ecX-1f-iqX"/>
+                                    <action selector="reportMyLocationTapped:" destination="LEo-ye-s9z" eventType="touchUpInside" id="r0W-9T-RbW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -386,15 +341,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K5d-VM-a2G"/>
                     </view>
+                    <connections>
+                        <outlet property="parentIdTextField" destination="VDm-HX-Q54" id="4FO-F2-qBb"/>
+                        <segue destination="VZE-u2-u4Z" kind="show" identifier="locationMonitorSegue" id="O6o-Ad-KvV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8pF-bs-6mD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1007" y="-160"/>
         </scene>
-        <!--View Controller-->
+        <!--Location Monitor View Controller-->
         <scene sceneID="t9s-sL-V4g">
             <objects>
-                <viewController id="VZE-u2-u4Z" sceneMemberID="viewController">
+                <viewController id="VZE-u2-u4Z" customClass="LocationMonitorViewController" customModule="DigitalCrib" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PPB-Mj-P6W">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -674,6 +633,42 @@
             </objects>
             <point key="canvasLocation" x="1007" y="1503"/>
         </scene>
+        <!--Enter ParentID View Controller-->
+        <scene sceneID="sgR-i1-FUd">
+            <objects>
+                <viewController id="405-rp-35O" customClass="EnterParentIDViewController" customModule="DigitalCrib" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RYl-dI-XZT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parent Id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3rn-M7-36W">
+                                <rect key="frame" x="114" y="83" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9k-Gf-87F">
+                                <rect key="frame" x="114" y="155" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Child"/>
+                                <connections>
+                                    <action selector="showChildTapped:" destination="405-rp-35O" eventType="touchUpInside" id="BdZ-zs-slT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2FD-eY-rK5"/>
+                    </view>
+                    <connections>
+                        <outlet property="parentIDTextField" destination="3rn-M7-36W" id="0g6-YI-5sF"/>
+                        <segue destination="fo1-xl-IdZ" kind="show" identifier="mapViewSegue" id="WgR-1F-lZW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QL9-al-0U4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2927" y="650"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background" width="1280" height="949"/>
@@ -682,6 +677,6 @@
         <image name="safeChild" width="241" height="209"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IRs-u6-NA5"/>
+        <segue reference="gue-I8-ddl"/>
     </inferredMetricsTieBreakers>
 </document>
